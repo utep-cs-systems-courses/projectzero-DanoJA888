@@ -23,6 +23,16 @@ void print_triangle(int leftCol, int size)
     for (col = 0; col < minCol; col++) putchar(' ');
     for (       ; col <= maxCol; col++) putchar('*');
     putchar('\n');
+
   }
+}
+
+//Prints the arrow combinging the triangle and the rectangle
+void print_arrow(int leftCol, int size)
+{
+  int sq_offset = leftCol + 3;
+  print_triangle(leftCol, size);
+  print_square(sq_offset, size);
+
 }
 
